@@ -1,6 +1,6 @@
 <?php include "header.php";
 $action = $_GET['action'];
-include "Home_connexionPdo.php";
+include "connexionPdo.php";
 
 if($action == "Modifier"){
     $num = $_GET['num'];

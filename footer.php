@@ -5,7 +5,7 @@
         <h5 class="modal-title">Confirmation de supression</h5>
       </div>
       <div class="modal-body">
-        <p><b>Etes vous sûr de supprimer cette nationalité ?</b></p>
+        <p>Etes vous sûr de supprimer cette nationalité ?</p>
       </div>
       <div class="modal-footer">
         <a href="" type="button" class="btn btn-primary" id="btnSuppr">Supprimer</a>
@@ -24,6 +24,9 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/60736465e2.js" crossorigin="anonymous"></script>
 <script>type="text/javascript"
+
+
+
 
 $("a[data-suppr]").click(function(){
   var lien = $(this).attr("data-suppr");

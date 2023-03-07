@@ -1,5 +1,5 @@
 <?php include "header.php";
-include "Home_connexionPdo.php";
+include "connexionPdo.php";
 
 $libelle="";
 $continentSel="Tous";
@@ -13,8 +13,6 @@ if(!empty($_GET)){
 }
 
 $textReq.= " order by n.libelle";
-
-var_dump($_GET);
 
 $req = $monPdo->prepare($textReq);
 $req->setFetchMode(PDO::FETCH_OBJ);
@@ -52,7 +50,7 @@ if(!empty($_SESSION['message'])){
         
     </div>
 
-
+    <div class='rom mt-2'>
     <form action="" method="get" class="border border-primary rounded p-3 mt-3 mb-3">
         <div class="row">
             <div class="col">

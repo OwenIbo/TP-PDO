@@ -1,5 +1,5 @@
 <?php include "header.php";
-include "Home_connexionPdo.php";
+include "connexionPdo.php";
 $num = $_GET['num'];
 
 $req=$monPdo->prepare("DELETE FROM nationalite where num = :num");
@@ -10,11 +10,17 @@ echo '<div class="container mt-5">';
 echo '<div class="row">
     <div class="col mt-5">';
 if($nb == 1) {
-    $_SESSION['message']=["warning"=>"La nationalité a bien été supprimée"];
+    echo' <div class="alert alert-success" role=""alert">
+    La nationalité a bien été supprimée </div> ';
 }else{
-    $_SESSION['message']=["success"=>"Problème : La nationalité n'a pas été supprimée !"];
+     echo' <div class="alert alert-success" role=""alert">
+     Problème : La nationalité n\'a pas été supprimée </div>';
 }
-header('location: listeNationalites.php');
-exit();
+?>
+    </div>
+</div>
+<a href="listeNationalite.php" class ="btn btn-primary"> Revenir a la liste des nationalités </a>
+</div>
 
+<?php include "footer.php";
 ?>

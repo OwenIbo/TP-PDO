@@ -1,5 +1,5 @@
 <?php include "header.php";
-include "Home_connexionPdo.php";
+include "connexionPdo.php";
 $action = $_GET['action'];
 $num = $_POST['num'];
 $libelle = $_POST['libelle'];
@@ -26,13 +26,11 @@ echo '<div class="row">
 
 if($nb == 1) {
     echo '<div class="alert alert-success" role="alert">
-    La nationalité a bien été ' . $message . 
-    '</div> ';
+    La nationalité a bien été ' . $message . '</div> ';
 
 }else{
     echo ' <div class="alert alert-warning" role="alert">
-    La nationalité n\'a pas été ' . $message . ' !
-    </div> ';
+    La nationalité n\'a pas été ' . $message . '</div> ';
 
 }
 ?>

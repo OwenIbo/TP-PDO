@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,14 +6,14 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.101.0">
-    <title>1</title>
+    <title>Jumbotron Template · Bootstrap v4.6</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/jumbotron/">
 
     
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.css">
 
 
     <!-- Favicons -->
@@ -48,29 +47,27 @@
     
     <!-- Custom styles for this template -->
     <link href="jumbotron.css" rel="stylesheet">
-    <!-- FontAwesome CSS -->
-    <link rel="stylesheet" href="https://kit.fontawesome.com/60736465e2.css" crossorigin="anonymous">
   </head>
-
   <body>
     
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  <a class="navbar-brand" href="index.php">Ma bibliothèque</a>
+  <a class="navbar-brand" href="#">Ma bibliothèque</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
+     
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false"> <i class="fa-solid fa-lines-leaning"></i> Gestion des genres</a>
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">Gestion des genres</a>
         <div class="dropdown-menu">
           <a class="dropdown-item" href="#">Liste des genres</a>
           <a class="dropdown-item" href="#">Ajouter un genre</a>
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false"> <i class="fa-regular fa-user"></i> Gestion des auteurs</a>
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">Gestion des auteurs</a>
         <div class="dropdown-menu">
           <a class="dropdown-item" href="#">Liste des auteurs</a>
           <a class="dropdown-item" href="#">Ajouter un auteur</a>
@@ -78,10 +75,10 @@
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false"> <i class="fa-regular fa-font-awesome"></i> Gestion des nationalités</a>
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">Gestion des nationalités</a>
         <div class="dropdown-menu">
           <a class="dropdown-item" href="listeNationalites.php">Liste des nationalités</a>
-          <a class="dropdown-item" href="#">Ajouter une nationalité</a>
+          <a class="dropdown-item" href="#">Ajouter une nationalités</a>
         </div>
       </li>
     </ul>
